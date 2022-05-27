@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoActivity"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_info"
+        android:layout_margin="10dp"
+        android:text="뭐라쓰지"
+        android:textSize="32dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/img_info"
+        android:layout_width="200dp"
+        android:layout_height="440dp"
+        android:layout_below="@id/title_info"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/trip1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_below="@id/img_info"
+        android:text="사진설명 어쩌구"
+        android:id="@+id/txt_info"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_info_back"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_info"
+        android:text="뒤로"/>
+
+
+</RelativeLayout>
